@@ -14,7 +14,7 @@ rand25() = 5*(rand5()-1)+rand5()
 int rand7(){
     int x = 5*(rand5()-1)+rand5();
     while(x > 21){
-        x = 5*rand5()+rand5();
+        x = 5*(rand5()-1)+rand5();
     }
     return x%7+1;
 }
